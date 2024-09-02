@@ -1,17 +1,17 @@
 /*Q1*/
 let nickname='リョウ';
-let age='22';
+let age=22;
 
 let greetings='私のニックネームは'+ nickname+'です。'+ '年齢は'+ age+'です。';
 
 console.log(greetings)
 
 /*Q2*/
-let language=['JavaScript', 'PHP', 'Ruby', 'Python', 'Go' ];
+let languages=['JavaScript', 'PHP', 'Ruby', 'Python', 'Go' ];
 
-let languages='私の言語は'+ language[0]+'です。'+'次は'+language[3]+'を勉強したいです。';
+let language='私の言語は'+ language[0]+'です。'+'次は'+language[3]+'を勉強したいです。';
 
-console.log(languages)
+console.log(language)
 
 /*Q3*/
 
@@ -49,6 +49,15 @@ console.log(playerList[1].favorites[1])
 /*Q5*/
 
 console.log((playerList[0].age+playerList[1].age+playerList[2].age)/3)
+
+let sum= 0
+
+for (let i = 0; i < playerList.length; i++) {
+  console.log(playerList[i].age)
+  sum+=playerList[i].age
+}
+
+console.log(sum)
 
 /*Q6*/
 
@@ -112,6 +121,14 @@ nu.remainder = function (x,y) {
 
 console.log('5を3で割った余りは'+nu.remainder(5, 3)+'です。');
 
+// 関数のみ
+
+function remainder(x,y) {
+  return x % y;
+  }
+  
+  console.log('5を3で割った余りは'+remainder(5,3)+'です。');
+
 /*Q10*/
 
 //console.logがスコープ外にあり、let xを参照することができないため。
@@ -145,9 +162,11 @@ if (num > 0) {
 /*Q4*/
 let numbers =[];
 
-for (let numbers = 0; numbers < 100; numbers++) {
-  console.log(numbers);
+for (let i = 0; i < 100; i++) {
+  numbers.push(i);
 }
+
+console.log(numbers)
 
 /*Q5*/
 
