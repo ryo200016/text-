@@ -57,7 +57,7 @@ for (let i = 0; i < playerList.length; i++) {
   sum+=playerList[i].age
 }
 
-console.log(sum)
+console.log(sum/playerList.length)
 
 /*Q6*/
 
