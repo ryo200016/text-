@@ -80,48 +80,37 @@ user.sayHello();
 
 /*Q8*/
 
-let calc = {
+let calc = {};
 
-add:function () {
-let fav= 5;
-let two= 2;
-  console.log(fav+two);
-}
-,
-subtract:function() {
-  let three=3;
-  let Thirteen=13;
-  console.log(Thirteen-three)
-}
-,
-multiply:function () {
-  let sevn= 7
-  console.log(sevn*sevn)
-}
-,
-divide:function () {
-  let ten=10;
-  let two=2;
-  console.log(ten / two)
-}
-
+calc.add = function(x, y) {
+  console.log(x + y);
 };
 
-calc.add();
-calc.subtract();
-calc.multiply();
-calc.divide();
+calc.subtract = function(x, y) {
+  console.log(x - y);
+};
+
+calc.multiply = function(x, y) {
+  console.log(x * y);
+};
+
+calc.divide = function(x, y) {
+  console.log(x / y);
+};
+
+calc.add(3, 4);
+calc.subtract(15, 5);
+calc.multiply(7, 7);
+calc.divide(25, 5);
 
 /*Q9*/
+let nu ={}
 
-function remainder() {
-  let fav=5;
-  let two=3;
-  let numericalformula=fav%two;
-  return numericalformula;
+nu.remainder = function (x,y) {
+  return x % y;
 }
 
-console.log('5を3で割った余りは'+remainder()+'です。');
+console.log('5を3で割った余りは'+nu.remainder(5, 3)+'です。');
 
 /*Q10*/
 
@@ -143,21 +132,18 @@ setTimeout(() => {console.log('Hello World!')}, '3000');
 
 /*Q3*/
 
-let num=0
+let num = 0;
 
-if (num>0){
+if (num > 0) {
   console.log('num is greater than 0');
-}
-
-if (num<0){
-  console.log('num is less than 0')
-}
-
-if (num==0) {
-  console.log('num is 0')
+} else if (num < 0) {
+  console.log('num is less than 0');
+} else {
+  console.log('num is 0');
 }
 
 /*Q4*/
+let numbers =[];
 
 for (let numbers = 0; numbers < 100; numbers++) {
   console.log(numbers);
