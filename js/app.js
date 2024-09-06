@@ -1,16 +1,16 @@
 /*Q1*/
-let nickname='リョウ';
-let age=22;
+let nickname = 'リョウ';
+let age = 22;
 
-let greetings='私のニックネームは'+ nickname+'です。'+ '年齢は'+ age+'です。';
+let greetings = '私のニックネームは'+ nickname+'です。'+ '年齢は'+ age+'です。';
 
 console.log(greetings)
 
 /*Q2*/
-let languages=['JavaScript', 'PHP', 'Ruby', 'Python', 'Go' ];
+let languages = ['JavaScript', 'PHP', 'Ruby', 'Python', 'Go' ];
 
-let language='私の言語は'+ language[0]+'です。'+'次は'+language[3]+'を勉強したいです。';
-
+let language = '私の言語は'+ languages[0]+'です。'+'次は'+languages[3]+'を勉強したいです。';
+// let language =`私の言語は${languages[0]}です。次は${languages[3]}を勉強したいです。`;
 console.log(language)
 
 /*Q3*/
@@ -50,11 +50,11 @@ console.log(playerList[1].favorites[1])
 
 console.log((playerList[0].age+playerList[1].age+playerList[2].age)/3)
 
-let sum= 0
+let sum = 0
 
 for (let i = 0; i < playerList.length; i++) {
   console.log(playerList[i].age)
-  sum+=playerList[i].age
+  sum += playerList[i].age
 }
 
 console.log(sum/playerList.length)
@@ -62,14 +62,14 @@ console.log(sum/playerList.length)
 /*Q6*/
 
 function sayHello() {
-  let hello='Hello';
+  let hello = 'Hello';
 
 console.log(hello)
 };
 
 sayHello();
 
-let sayworld=function(){
+let sayworld = function(){
   console.log('World');
 };
 
@@ -77,9 +77,9 @@ sayworld();
 
 /*Q7*/
 
-user.birthday='2000-09-27';
+user.birthday = '2000-09-27';
 
-user.sayHello= function() {
+user.sayHello = function() {
   console.log('Hello!')
 }
 
@@ -137,13 +137,13 @@ function remainder(x,y) {
 
 /*Q1*/
 
-let random=Math.floor( Math.random() * 10 );
+let random = Math.floor( Math.random() * 10 );
 
 console.log(random)
 
 /*Q2*/
 
-setTimeout(() => {console.log('Hello World!')}, '3000');
+setTimeout(() => {console.log('Hello World!')}, 3000);
 
 // setTimeout();
 
@@ -160,7 +160,7 @@ if (num > 0) {
 }
 
 /*Q4*/
-let numbers =[];
+let numbers = [];
 
 for (let i = 0; i < 100; i++) {
   numbers.push(i);
